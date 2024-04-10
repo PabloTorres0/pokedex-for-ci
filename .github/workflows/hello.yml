@@ -5,11 +5,10 @@ on:
     branches:
       - main
 
-
-jobs: 
-  hello_word: 
+jobs:
+  hello_world:
     runs-on: ubuntu-18.04
     steps:
-      - name: Echo the menssage
+      - name: Echo the message
         run: |
-          echo "hola midu!"
+          echo "Hola midu!"
