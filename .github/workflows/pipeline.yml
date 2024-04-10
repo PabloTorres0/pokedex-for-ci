@@ -1,21 +1,16 @@
-name: Deployment Pipeline
+name: Say hello2
 
-on: 
+on:
   push:
     branches:
       - main
 
-jobs: 
-  deploy:
+jobs:
+  hello_world:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '14'
-      - name: Install dependencies
-        run: npm Install
-      - name: Lint
-        run: npm run eslint
+      - name: Echo the message
+        run: |
+          echo "Hola midu!"
+      - name: Dime la fecha
+        run: date
