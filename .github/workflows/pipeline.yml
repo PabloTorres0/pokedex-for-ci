@@ -1,4 +1,4 @@
-name: Deployment Pipeline
+name: Deployment Pipeline2
 
 on: 
   push:
@@ -24,7 +24,7 @@ jobs:
       - name: Deploy on Heroku
         uses: akhileshns/heroku-deploy@v3.13.15 
         with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: ${{secrets.HEROKU_APP}}
-          heroku_email: ${{secrets.HEROKU_API_EMAIL}}
+          heroku_api_key: HRKU-4d7444d0-c364-4750-a92e-e97902ddc4d1
+          heroku_app_name: midu-ci-gh
+          heroku_email: pablo.javier.torres.martinez@gmail.com
 
