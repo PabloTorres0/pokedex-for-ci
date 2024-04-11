@@ -1,11 +1,9 @@
-name: Deployment Pipeline
+name: Deployment Pipeline3
 
 on: 
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-    types: [opened, synchronize]
+    branches:
+      - main
 
 jobs: 
   deploy:
@@ -29,4 +27,3 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: ${{secrets.HEROKU_APP}}
           heroku_email: ${{secrets.HEROKU_API_EMAIL}}
-
